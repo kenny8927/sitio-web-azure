@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanrio World 🎀</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">🎀 Sanrio World</a>
+
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#personajes">Personajes</a>
+            <a href="#quiz">Quiz</a>
+        </div>
+
+        <button id="themeButton" class="theme-button">
+            🌙 Dark mode
+        </button>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="tag">♡ Welcome to my kawaii world ♡</span>
+
+            <h1>
+                Un mundo lleno de
+                <span class="pink-text">ternura</span>
+            </h1>
+
+            <p>
+                Hello Kitty, Kuromi, My Melody y Cinnamoroll
+                te esperan en este pequeño universo kawaii.
+            </p>
+
+            <a href="#personajes" class="main-button">
+                Explorar personajes ✨
+            </a>
+
+            <div class="floating-hearts">♡ ♡ ✧ ♡</div>
+        </div>
+
+        <div class="hero-decoration">
+            <div class="big-heart">🎀</div>
+            <div class="mini-sticker sticker-one">🐰</div>
+            <div class="mini-sticker sticker-two">☁️</div>
+            <div class="mini-sticker sticker-three">💜</div>
+        </div>
+    </header>
+
+    <section id="personajes" class="characters-section">
+
+        <div class="section-heading">
+            <span>♡ Conoce a tus favoritos ♡</span>
+            <h2>Universo Sanrio</h2>
+            <p>¿Cuál de estos personajes es tu favorito?</p>
+        </div>
+
+        <div class="character-grid">
+
+            <article class="character-card hello">
+                <div class="character-icon">🎀</div>
+                <h3>Hello Kitty</h3>
+                <p>Amable, dulce y siempre lista para hacer amigos.</p>
+                <button onclick="selectCharacter('Hello Kitty')">
+                    Elegir personaje ♡
+                </button>
+            </article>
+
+            <article class="character-card kuromi">
+                <div class="character-icon">💜</div>
+                <h3>Kuromi</h3>
+                <p>Traviesa, divertida y con un estilo único.</p>
+                <button onclick="selectCharacter('Kuromi')">
+                    Elegir personaje ♡
+                </button>
+            </article>
+
+            <article class="character-card melody">
+                <div class="character-icon">🌸</div>
+                <h3>My Melody</h3>
+                <p>Tierna, adorable y amante de las cosas bonitas.</p>
+                <button onclick="selectCharacter('My Melody')">
+                    Elegir personaje ♡
+                </button>
+            </article>
+
+            <article class="character-card cinnamoroll">
+                <div class="character-icon">☁️</div>
+                <h3>Cinnamoroll</h3>
+                <p>Un pequeño angelito que vuela entre las nubes.</p>
+                <button onclick="selectCharacter('Cinnamoroll')">
+                    Elegir personaje ♡
+                </button>
+            </article>
+
+        </div>
+
+        <div id="selectionMessage" class="selection-message">
+            ¡Selecciona a tu personaje favorito! 💕
+        </div>
+
+    </section>
+
+    <section id="quiz" class="quiz-section">
+
+        <div class="quiz-box">
+            <span>✨ Descubre tu personalidad kawaii ✨</span>
+
+            <h2>¿Qué personaje Sanrio eres?</h2>
+
+            <p>
+                Haz clic y descubre qué personaje combina
+                con tu energía de hoy.
+            </p>
+
+            <button class="main-button" onclick="discoverCharacter()">
+                Descubrir mi personaje 💖
+            </button>
+
+            <div id="quizResult" class="quiz-result"></div>
+        </div>
+
+    </section>
+
+    <section class="message-section">
+        <h2>Un mensajito para ti 💌</h2>
+
+        <p id="loveMessage">
+            Recuerda que eres una personita especial ♡
+        </p>
+
+        <button onclick="newMessage()" class="message-button">
+            Dame otro mensajito ✨
+        </button>
+    </section>
+
+    <footer>
+        <p>Hecho con ♡ y mucho glitter</p>
+        <p>Sanrio World | Proyecto académico de Azure</p>
+        <p class="footer-small">
+            Sitio de fans con fines educativos y no comerciales.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --pink: #ff80ab;
+    --light-pink: #ffe4ef;
+    --purple: #c9a7ff;
+    --blue: #bdeeff;
+    --text: #5d4355;
+    --background: #fff8fc;
+    --card: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    transition: 0.4s;
+}
+
+body.dark {
+    --background: #251d32;
+    --card: #392c48;
+    --text: #fff0fa;
+    --light-pink: #52334c;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: var(--card);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px #ffb6d522;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: var(--pink);
+}
+
+button, .main-button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.theme-button {
+    background: var(--light-pink);
+    color: var(--text);
+    padding: 10px 16px;
+    border-radius: 25px;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px 10%;
+    background: linear-gradient(135deg, #ffe3f0, #f3e7ff, #e1f8ff);
+}
+
+body.dark .hero {
+    background: linear-gradient(135deg, #493047, #302b50, #253c50);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tag {
+    color: #d75a92;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.pink-text {
+    color: #f062a0;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff80ab, #c79bff);
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 5px 15px #d99bc955;
+}
+
+.main-button:hover {
+    transform: translateY(-4px) scale(1.03);
+}
+
+.hero-decoration {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background: #ffffff88;
+    border: 3px dashed #ffacd0;
+    border-radius: 50%;
+}
+
+.big-heart {
+    font-size: 110px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.mini-sticker {
+    position: absolute;
+    font-size: 45px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.sticker-one {
+    top: 0;
+    left: 10px;
+}
+
+.sticker-two {
+    right: -15px;
+    top: 70px;
+}
+
+.sticker-three {
+    bottom: 0;
+    left: 50px;
+}
+
+.floating-hearts {
+    margin-top: 25px;
+    color: #ed7ab0;
+    letter-spacing: 12px;
+    animation: float 3s infinite;
+}
+
+.characters-section {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.section-heading span {
+    color: #e879ad;
+    font-size: 14px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    margin-bottom: 40px;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.character-card {
+    padding: 30px 20px;
+    border-radius: 25px;
+    background: var(--card);
+    box-shadow: 0 8px 25px #cba4c522;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffb5d4;
+}
+
+.hello {
+    background: linear-gradient(180deg, #ffe4ef, var(--card));
+}
+
+.kuromi {
+    background: linear-gradient(180deg, #e9ddff, var(--card));
+}
+
+.melody {
+    background: linear-gradient(180deg, #ffe9e9, var(--card));
+}
+
+.cinnamoroll {
+    background: linear-gradient(180deg, #e0f6ff, var(--card));
+}
+
+.character-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.character-card h3 {
+    margin-bottom: 10px;
+}
+
+.character-card p {
+    font-size: 13px;
+    min-height: 65px;
+    line-height: 1.7;
+}
+
+.character-card button {
+    background: #ffb5d4;
+    color: #653b54;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+.character-card button:hover {
+    background: #ff80ab;
+    color: white;
+}
+
+.selection-message {
+    margin-top: 30px;
+    font-weight: 600;
+    color: #e879ad;
+}
+
+.quiz-section {
+    padding: 70px 8%;
+    background: var(--light-pink);
+    text-align: center;
+}
+
+.quiz-box {
+    max-width: 650px;
+    margin: auto;
+}
+
+.quiz-box h2 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.quiz-box p {
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.quiz-result {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 25px;
+    color: #e879ad;
+}
+
+.message-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.message-section h2 {
+    margin-bottom: 20px;
+}
+
+.message-section p {
+    margin-bottom: 25px;
+}
+
+.message-button {
+    padding: 12px 22px;
+    border-radius: 25px;
+    background: #d6c0ff;
+    color: #513c67;
+}
+
+.message-button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background: var(--card);
+    padding: 30px;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.footer-small {
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@media (max-width: 900px) {
+    .character-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .character-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-decoration {
+        width: 230px;
+        height: 230px;
+    }
+
+    .big-heart {
+        font-size: 80px;
+    }
+}
+
