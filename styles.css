@@ -199,7 +199,7 @@ body.dark .hero {
 
 .character-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 
@@ -231,6 +231,10 @@ body.dark .hero {
 
 .cinnamoroll {
     background: linear-gradient(180deg, #e0f6ff, var(--card));
+}
+
+.chococat {
+    background: linear-gradient(180deg, #e8e1f5, var(--card));
 }
 
 .character-icon {
@@ -378,4 +382,3 @@ footer {
         font-size: 80px;
     }
 }
-
